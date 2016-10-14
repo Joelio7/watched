@@ -6,7 +6,6 @@
 <section>
     <h2><%=link_to(episode.title, "#{episode.url}", :target => "_blank")%></h2>
     <p><%=episode.plot%></p>
-    <p><%=episode.id%></p>
     <p> Season <%= episode.season.number %></p>
     <p>mark as watched <%= check_box_tag 'episode_id[]', episode.id %></p>
 <% end %>
